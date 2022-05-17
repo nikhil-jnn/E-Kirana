@@ -1,0 +1,120 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="542,950" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,885.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="510,793.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="897f73fa-5023-44bf-9b7f-9a66b3f3745b" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,575.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Product_Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Product_URL'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='Product_Image_URL'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='data-src'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="434,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="100" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www2.hm.com/en_in/women/new-arrivals/view-all.html" DesignTimeRectangle="901, 961, 495, 82" ElementType="Button" FriendlyName="'Load More Products'" FullSelectorArgument="&lt;webctrl aaname='Load More Products' parentid='page-content' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Load More Products' parentid='page-content' tag='BUTTON' type='' class='button js-load-more ' check:innerText='Load More Products' /&gt;" Guid="17b08af5-b15c-4847-bced-bf904243558d" ImageBase64="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" ScopeSelectorArgument="&lt;html app='msedge.exe' title='View All | H&amp;amp;M IN' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="447, 92, 1405, 10875" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='page-content' tag='UL' /&gt;" Guid="24d80673-7c0f-4b49-a51f-a254cead1c6e" InformativeScreenshot="0ad3517a260496385c00a6870c3d2476.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='View All | H&amp;amp;M IN' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[String.Format(&quot;The number of rows extracted are{0}&quot;,ExtractDataTable.Rows.Count)]" />
+            <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="clothes.csv" sap:VirtualizedContainerService.HintSize="434,156.666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQ6SURBVFhH7VZbiFVVGN5lF7tATTGOc87Za41nr6WCD4ZCWUP4IkQ9dJ96iC4QBUlgKr6EIY5DEUUXlJAJu0cRRTeIHGMGZnJmzt77QCTqQ4rm6GhRRDCYo1F9/7//tWadc4xeezgfLPZe3/d//7qvvaM22vhfI1fJilzZx6TKGImii3Kd3Al+ONf2LqFbUNP2ulyZgUmlFgnlMVGuWvhfyrXZKdT5gQam69rmUmVk2n5Z71n8N5XzdWB0oenMtBl1MZky94rEQP3RwH9C6FbkleQWCXpEqCitmNWBuS50AzJlX3YxRZxZJVKUd1Svgu9UkON1kVoB8QuUc19F5lKhsCT2/cD8tNAeu7u6rgB/KIg5HS4B/JucRgUztV6kRoxXbLlIYLYLFaWlniVIeEYSz6TKVkXywPLcFjaAuB9pz5BGA0EHjoR6XSUr2dgMGPspgDaLUODMNmdEQ+8J3QDEvOWTUwn2D4021NDGL+OVymUiN4JGirJXqkXvtT3qzFnFXi+Sx5hSHYiZkuR/yfNDkalzh1GnvDOifSNSI7I4uYMbwVOoKI+T+4hjo7IHc62X0oYSmZEqc48k3udjMWukgdsI30nU357LYwbY2AwED6H8TiNKVXITpu4J1PfPJS32AfgXxMJAA8NYmu/x3OVi0zi5X7STKK+h0RedlsX2ITY60MZDD9eSiOA/0NCvLri5QBsLZ4DOPvE448+iEztcXC1OliHnKnrnI4w9If4/xyuJYTNGMgjCn83/KkhYG+nsvJLNAoz0dtZwdyDXZ0WcPbO3q7oAz93o1Ne1Uulaali0Yx9F0Tw2Y7SfuuTNhZKgnJ2rm6fY1ARqgKYZu/oaTPMB8e5LdfVWep8s2+WZqvb6PMp8ItYCdWUf9yJGiGTP0dTlsX04MB2gWPB8HLE/HuR6d/flvGTKvoFRXYLnb5JnDzwfoCNTFIdObg1yPUNcA6hXLCKhUGR6xZlofZlTdoLj0Dmq40JaU+jVXhz6i9Ggm+YplNk8NusoDu8fu1xoq484jxGt53OS4IKhSwKmaWdyNx+4sxjlMAcBqL9LOr3TxeXiqUD7CfQFEveDcLMTWvcQ54FRPUliTSc3CkUz0hckGiq44luA6T0O7nnm0EnUJws9WeE8Evcq8e5qZw7XMSjulAcCv6OkUmVgyt90Jndm0djPc4lM37dxXJKk/M9Am83pzJftDcS7ZWJOW2yVAPS1EqFfqGL6sauFP5cr1U083t9BOUX7gJbEbdJaadFiNgLQh8Tnr/JMJxuIE77xK0o3GgmNn03zQGD4XOgWQKONdkiqDD6K3Gm7SShqY9DlS7W9W+gCCB5D8LhUGRjZzd4gx60ZW6LoQnin6XgJ5UEXEP0bSNXPAHUsLSWx0AVqWi/EKbhaqh70K0X7YrJsKkK1gJbmXz+pTcCybabZcv8HbbTRRoEo+gc14teSCzZ8SgAAAABJRU5ErkJggg==" InformativeScreenshot="f1cb5ee8019b77f8bf84b289d73df61a.png" Selector="&lt;html app='msedge.exe' title='View All | H&amp;amp;M IN' /&gt;" Url="https://www2.hm.com/en_in/women/new-arrivals/view-all.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
